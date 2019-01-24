@@ -20,6 +20,9 @@ namespace Projekt1
                 var x1 = (-b - Math.Sqrt(delta)) / (2 * a);
                 var x2 = (-b + Math.Sqrt(delta)) / (2 * a);
                 Console.WriteLine($"There are two solutions: {x1} and  {x2}.");
+                List<double> myList = new List<double> { x1, x2 };
+                var result = myList.Sum(x => 3 * x);
+                Console.WriteLine(result);
             }
             else if (delta == 0)
             {
